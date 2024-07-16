@@ -1,6 +1,6 @@
 <!-- resources/views/components/tank.blade.php -->
 <link href="{{ asset('css/card-style.css') }}" rel="stylesheet">
-<div class="card relative">
+<div class="card relative ">
     <div class="header">
         <div class="header-content flex justify-between items-center w-full space-x-14">
             <div class="left flex space-x-2">
@@ -20,7 +20,7 @@
         </div>
         @else
         <div class="alert2 flex items-center">
-            <!-- You can add content here if needed -->
+         
         </div>
         @endif
     </div>
@@ -38,7 +38,7 @@
 
         <div class="tank">
             <div class="water"
-            style="--water-height: {{ $data['percentage'] / 100 }}; background: linear-gradient(to top, #FF0000, #FF8080);">
+            style="--water-height: {{ $data['percentage'] / 100 }}; background: linear-gradient(to top, #E6AC10, #FFECB9);">
 
             </div>
             <div class="percentage-container">

@@ -8,7 +8,11 @@ module.exports = {
     extend: {},
     colors: {
       'red': '#FF2222',
-    }
+      'bleu':'#0C0C34',
+    },
+    gap: {
+      '8': '1rem', // Example custom gap size
+    },
   },
   plugins: [
     require('flowbite/plugin')({

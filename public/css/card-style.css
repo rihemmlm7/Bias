@@ -5,7 +5,7 @@ body {
     width: 314px;
     height: 169px;
     background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     border-radius: 30px;
     overflow: hidden;
     position: relative;
@@ -15,6 +15,7 @@ body {
     align-items: flex-start;
     padding: 10px;
     margin: 0px;
+    
 }
 
 .header {
@@ -103,6 +104,11 @@ body {
     margin-bottom: 0px;
 
 }
+.alert3{
+    margin-top: 5px;
+    margin-bottom: 0px;
+
+}
 .alert2{
     margin-top: 15px;
     margin-bottom: 0px;
@@ -110,12 +116,15 @@ body {
 }
 .alert i {
     font-size: 10px;
-
+    color: #e53e3e;
 }
-
+.alert3 i {
+    font-size: 10px;
+    color: #E6AC10;
+}
 .textalert {
     font-size: 11px;
-
+    color: #e53e3e;
 }
 
 .font-semibold {
