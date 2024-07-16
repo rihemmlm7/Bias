@@ -67,9 +67,7 @@
       </div>
     </div>
   </div>
-<div>
-@include('components.chart', ['data' => $data])
-</div>
+
   <style>
     .hide-scroll-bar {
       -ms-overflow-style: none;
