@@ -5,15 +5,15 @@
       <!-- Replace with your dynamic rows -->
       <tr>
         <td class="px-5 py-4 whitespace-nowrap">
-          <p class="text-gray-900">{{ $date }}</p>
+          <p class="text-gray-900 mb-3">{{ $date }}</p>
           <p class="text-gray-600">{{ $volume }}L</p>
         </td>
         <td class="px-20 py-4 whitespace-nowrap">
-          <p class="non-selectable-text">nothing</p>
-          <p class="text-gray-600">{{ $fuel_type }}cm</p>
+          <p class="non-selectable-text mb-3">nothing</p>
+          <p class="text-gray-600">{{ $dimensions }}cm</p>
         </td>
         <td class="px-5 py-4 whitespace-nowrap text-right">
-          <p class="text-gray-900">{{ $hour }}</p>
+          <p class="text-gray-900 mr-2 mb-3">{{ $hour }}</p>
           <div class="inline-block bg-green-200 text-green-900 px-3 py-1 rounded-xl flex items-center justify-center">
             <p class="mr-2">{{ $status }}</p>
             <i class="fa fa-caret-up text-green-600 custom-icon" aria-hidden="true"></i>

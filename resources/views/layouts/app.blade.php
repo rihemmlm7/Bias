@@ -123,7 +123,7 @@
           @include('components.table', [
     'date' => '25.05.2024',
     'volume' => '2500',
-    'fuel_type' => '1080',
+    'dimensions' => '1080',
     'hour' => '07:00',
     'status' => '40'
   ])
