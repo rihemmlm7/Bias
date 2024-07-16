@@ -85,32 +85,35 @@
                   'volume' => '40000',
                   'dimensions' => '1467',
                   'percentage' => 10,
-                  'last_sync' => Carbon::parse('2024-05-23 18:16')->format('d-m-Y H:i'),
+                  'date' => Carbon::parse('2024-05-23')->format('d-m-Y '),
+                  'hour' => Carbon::parse('19:30')->format('H:i'),  
                   'alert_message' => 'Alerte rupture de stock',
                   'water_color' => '#FF0000, #FF8080', // gradient from red to light red
           ])
         </div>
         <div class=" p-0 rounded">
         @include('components.tank', [
-'type' => 'Diesel',
-'volume' => '40000',
-'dimensions' => '1467',
-'percentage' => 40,
-'last_sync' => Carbon::parse('2024-05-23 18:16')->format('d-m-Y H:i'),
-'alert_message' => '',
-'water_color' => ' #E6AC10, #FFECB9', // gradient from yellow to light yellow
-])
+                  'type' => 'Diesel',
+                  'volume' => '40000',
+                  'dimensions' => '1467',
+                  'percentage' => 60,
+                  'date' => Carbon::parse('2024-05-23')->format('d-m-Y '),
+                  'hour' => Carbon::parse('19:30')->format('H:i'),  
+                  'alert_message' => '',
+                  'water_color' => '#E6AC10, #FFECB9', // gradient from red to light red
+          ])
         </div>
         <div class="p-0 rounded">
         @include('components.tank', [
-'type' => 'Diesel',
-'volume' => '40000',
-'dimensions' => '1467',
-'percentage' => 10,
-'last_sync' => Carbon::parse('2024-05-23 18:16')->format('d-m-Y H:i'),
-'alert_message' => 'Alerte rupture de stock',
-'water_color' => '#FF0000, #FF8080', // gradient from red to light red
-])
+                  'type' => 'Ess',
+                  'volume' => '40000',
+                  'dimensions' => '1467',
+                  'percentage' => 10,
+                  'date' => Carbon::parse('2024-05-23')->format('d-m-Y '),
+                  'hour' => Carbon::parse('19:30')->format('H:i'),  
+                  'alert_message' => 'Alerte rupture de stock',
+                  'water_color' => '#E6AC10, #FFECB9', // gradient from red to light red
+          ])
         </div>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-4 gap-3 mb-3 mt-4">

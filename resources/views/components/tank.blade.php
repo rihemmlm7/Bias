@@ -9,7 +9,8 @@
             </div>
             <div class="right flex space-x-1">
                 <h1 class="card-title2">Dernier synchro</h1>
-                <p class="volume2">{{ $last_sync }}</p>
+                <p class="volume2">{{ $date }}</p>
+                <p class="volume2">{{ $hour }}</p>
             </div>
         </div>
         
