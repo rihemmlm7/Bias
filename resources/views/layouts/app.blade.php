@@ -80,6 +80,10 @@
 
           <!-- Table -->
           <div class=" bg-white shadow p-2  mb-4 rounded-xl overflow-x-auto">
+            
+  <table class="min-w-full divide-y divide-gray-200">
+
+<tbody class="bg-white divide-y divide-gray-200 text-sm">
             @include('components.table', [
   'date' => '25.05.2024',
   'volume' => '2500',
@@ -87,6 +91,25 @@
   'hour' => '07:00',
   'status' => '40'
 ])
+@include('components.table', [
+  'date' => '25.05.2024',
+  'volume' => '2500',
+  'dimensions' => '1080',
+  'hour' => '07:00',
+  'status' => '40'
+])
+@include('components.table', [
+  'date' => '25.05.2024',
+  'volume' => '2500',
+  'dimensions' => '1080',
+  'hour' => '07:00',
+  'status' => '40'
+])
+      
+      <!-- Repeat the above row structure for each dynamic row -->
+      </tbody>
+  </table>
+
           </div>
            <!-- Fin Table -->
         </div>
@@ -107,6 +130,7 @@
   'percentage' => 10,
   'water_color' => '#E6AC10, #FFECB9',
 ])
+
         </div>
         <!-- Fin Facture -->
       </div>

@@ -26,8 +26,8 @@
     <div class="flex flex-col flex-1 self-start mt-1.5 font-medium text-gray-500 ">
       <div class="flex justify-between w-full items-center mt-5 ">
         <p class="mr-2">Min:</p>
-        <div class="inline-block bg-green-200 text-green-900 px-3 py-1 rounded-xl flex items-center justify-end">
-        <i class="fa fa-caret-up text-green-600 custom-icon mr-2" aria-hidden="true"></i> 
+        <div class="inline-block bg-red-200 text-red-900 px-3 py-1 rounded-xl flex items-center justify-end">
+        <i class="fa fa-caret-down text-red-600 custom-icon mr-2" aria-hidden="true"></i> 
         <p class="">{{ $min}}L</p>
           
           
@@ -55,8 +55,8 @@
 
       <div class="flex justify-between w-full items-center mt-5 ">
         <p class="mr-2">Commance par:</p>
-        <div class="inline-block bg-green-200 text-green-900 px-3 py-1 rounded-xl flex items-center justify-end">
-        <i class="fa fa-caret-up text-green-600 custom-icon mr-2" aria-hidden="true"></i> 
+        <div class="inline-block bg-red-200 text-red-900 px-3 py-1 rounded-xl flex items-center justify-end">
+        <i class="fa fa-caret-down text-red-600 custom-icon mr-2" aria-hidden="true"></i> 
         <p class="">{{ $comnce_par}}L</p>
           
           

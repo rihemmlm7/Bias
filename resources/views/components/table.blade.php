@@ -1,7 +1,4 @@
 
-  <table class="min-w-full divide-y divide-gray-200">
-
-    <tbody class="bg-white divide-y divide-gray-200 text-sm">
       <!-- Replace with your dynamic rows -->
       <tr>
         <td class="px-5 py-4 whitespace-nowrap">
@@ -20,9 +17,6 @@
           </div>
         </td>
       </tr>
-      <!-- Repeat the above row structure for each dynamic row -->
-    </tbody>
-  </table>
 
 
 <style>
