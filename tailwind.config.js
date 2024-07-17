@@ -9,6 +9,7 @@ module.exports = {
     colors: {
       'red': '#FF2222',
       'bleu':'#0C0C34',
+      'gray':'#575B66',
     },
     gap: {
       '8': '1rem', // Example custom gap size

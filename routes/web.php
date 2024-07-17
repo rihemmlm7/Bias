@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TankController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Define the route for the homepage
+Route::get('/', [TankController::class, 'index']);

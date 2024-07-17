@@ -1,0 +1,44 @@
+
+    .scrolling-section {
+      overflow-x: hidden; 
+      overflow-y: auto; 
+      white-space: nowrap; 
+      padding: 5px; 
+      display: flex; 
+      
+    }
+
+    .scrolling-section .card {
+      min-width: 300px;
+      margin-right: 10px; 
+    }
+
+    .grid {
+      flex: 1; 
+    }
+
+    @media (max-width: 1223px) {
+      .scrolling-section {
+        overflow-x: auto; 
+        overflow-y: hidden; 
+      }
+    }
+
+    table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table th, table td {
+    padding: 10px; 
+    border-bottom: 1px solid #ccc;
+  }
+
+  table th {
+    text-align: left;
+    background-color: #f7f7f7;
+  }
+
+  table tr:last-child td {
+    border-bottom: none;
+  }
