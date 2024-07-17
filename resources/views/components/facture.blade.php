@@ -119,7 +119,7 @@
 
       </div>
  
-      <div class="shrink-0  h-2.5 bg-gray-600 bg-opacity-80 rounded-[40px] w-[37px]" role="separator" aria-hidden="true"></div>
+      <div class="shrink-0 mt-11 h-2.5 bg-gray-600 bg-opacity-80 rounded-[40px] w-[37px]" role="separator" aria-hidden="true"></div>
 
         <div class="tank">
             <div class="water"
