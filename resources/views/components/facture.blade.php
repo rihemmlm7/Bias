@@ -1,4 +1,4 @@
-<section class="flex flex-col items-center justify-center pt-2 pr-11 pl-11">
+<section class="flex flex-col items-center justify-center pt-2 pr-2 pl-2">
   <header>
     <h2 class="text-xs font-extrabold text-gray-900 mb-2">Diesel</h2>
   </header>
@@ -60,7 +60,7 @@
   <hr class="shrink-0 self-center mt-3 max-w-full h-px border border-solid bg-slate-300 border-slate-300 w-[318px]">
   <p class="mt-2 text-[10px] font-medium text-blue-800">Le total est entre le 23/05/2024 09:01 et le 24/05/2024 09:00</p>
   <hr class="shrink-0 self-center mt-3 max-w-full h-px border border-solid bg-slate-300 border-slate-300 w-[318px]">
-  <div class="flex justify-between w-full items-center mt-0 pr-2 pl-5">
+  <div class="flex justify-between w-full items-center mt-2 pr-2 pl-5">
     <p class="mr-2 text-xs font-medium text-dark">Achat:</p>
     <p class="mr-2 text-xs font-medium text-dark">{{ $achat }}L</p>
   </div>

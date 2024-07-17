@@ -13,12 +13,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Add Chart.js here -->
 </head>
+
 <style>
-    /* Hide scrollbar for Chrome, Safari, and Opera */
-    .bg-blue1::-webkit-scrollbar {
-      display: none;
-    }
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  .bg-blue1::-webkit-scrollbar {
+    display: none;
+  }
 </style>
+
 <body class="bg-gray-100">
   <div class="min-h-screen flex flex-col lg:flex-row overflow-hidden">
     <!-- sidebar -->
@@ -78,9 +80,10 @@
         </div>
       </div>
       <!-- Fin cuve card -->
+
       <div class="grid grid-cols-1 lg:grid-cols-9 gap-3 m-2">
-        <div class="col-start-1 col-end-6">
-          <div class="bg-white shadow p-4 rounded-xl mb-4 ">
+        <div class="col-span-1 lg:col-span-5">
+          <div class="bg-white shadow p-4 rounded-xl mb-4">
             @include('components.chart')
           </div>
 
@@ -128,23 +131,26 @@
           </div>
           <!-- Fin Table -->
         </div>
+
         <!-- Facture -->
-        <div class="bg-white shadow rounded-xl col-start-6 col-end-10">
-          @include('components.facture', [
-            'date' => '25.05.2024',
-            'volume' => '2500',
-            'hour' => '07:00',
-            'nv_litre' => '15000',
-            'min' => '15000',
-            'max' => '15000',
-            'comnce_par' => '15000',
-            'terminer' => '15000',
-            'difirance' => '15000',
-            'achat' => '15000',
-            'vente' => '15000',
-            'percentage' => 10,
-            'water_color' => '#E6AC10, #FFECB9',
-          ])
+        <div class="col-span-1 lg:col-span-4">
+          <div class="bg-white shadow rounded-xl p-4 mb-4">
+            @include('components.facture', [
+              'date' => '25.05.2024',
+              'volume' => '2500',
+              'hour' => '07:00',
+              'nv_litre' => '15000',
+              'min' => '15000',
+              'max' => '15000',
+              'comnce_par' => '15000',
+              'terminer' => '15000',
+              'difirance' => '15000',
+              'achat' => '15000',
+              'vente' => '15000',
+              'percentage' => 10,
+              'water_color' => '#E6AC10, #FFECB9',
+            ])
+          </div>
         </div>
         <!-- Fin Facture -->
       </div>
