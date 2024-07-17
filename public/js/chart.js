@@ -1,9 +1,8 @@
-
 const options = {
   chart: {
     height: "100%",
     maxWidth: "100%",
-    type: "line",
+    type: "area",
     fontFamily: "Inter, sans-serif",
     dropShadow: {
       enabled: false,
@@ -18,6 +17,15 @@ const options = {
       show: false,
     },
   },
+  fill: {
+    type: "gradient",
+    gradient: {
+      opacityFrom: 0.55,
+      opacityTo: 0,
+      shade: "#1C64F2",
+      gradientToColors: ["#1C64F2"],
+    },
+  },
   dataLabels: {
     enabled: false,
   },
@@ -25,40 +33,25 @@ const options = {
     width: 6,
   },
   grid: {
-    show: true,
+    show: false,
     strokeDashArray: 4,
     padding: {
       left: 2,
       right: 2,
-      top: -26
+      top: 0
     },
   },
   series: [
     {
-      name: "Clicks",
+      name: "New users",
       data: [6500, 6418, 6456, 6526, 6356, 6456],
       color: "#1A56DB",
     },
-    {
-      name: "CPC",
-      data: [6456, 6356, 6526, 6332, 6418, 6500],
-      color: "#7E3AF2",
-    },
   ],
-  legend: {
-    show: false
-  },
-  stroke: {
-    curve: 'smooth'
-  },
   xaxis: {
-    categories: ['01 Feb', '02 Feb', '03 Feb', '04 Feb', '05 Feb', '06 Feb', '07 Feb'],
+    categories: ['01 February', '02 February', '03 February', '04 February', '05 February', '06 February', '07 February'],
     labels: {
-      show: true,
-      style: {
-        fontFamily: "Inter, sans-serif",
-        cssClass: 'text-xs font-normal fill-gray-500 dark:fill-gray-400'
-      }
+      show: false,
     },
     axisBorder: {
       show: false,
@@ -72,7 +65,7 @@ const options = {
   },
 }
 
-if (document.getElementById("line-chart") && typeof ApexCharts !== 'undefined') {
-  const chart = new ApexCharts(document.getElementById("line-chart"), options);
+if (document.getElementById("area-chart") && typeof ApexCharts !== 'undefined') {
+  const chart = new ApexCharts(document.getElementById("area-chart"), options);
   chart.render();
 }

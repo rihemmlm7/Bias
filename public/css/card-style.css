@@ -2,8 +2,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .card {
-    width: 314px;
-    height: 169px;
+    width: 190px;
+    height: 135px;
     background-color: #ffffff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     border-radius: 30px;
@@ -62,14 +62,14 @@ body {
 .pulse {
     position: absolute;
     right: 0;
-    width: 9px;
-    height: 9px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background-color: #12FE46;
     z-index: 1; /* Ensure pulse is above other elements */
     margin-bottom: 8px;
     margin-left: 14px;
-    margin-right: 16px;
+    margin-right: 20px;
 }
 
 .pulse:before,
@@ -123,7 +123,7 @@ body {
     color: #E6AC10;
 }
 .textalert {
-    font-size: 11px;
+    font-size: 9px;
     color: #e53e3e;
 }
 
@@ -141,12 +141,12 @@ body {
 
 .tank-container {
     position: relative;
-    margin-top: -15px;
+    margin-top: -29px;
 }
 
 .tank {
-    width: 172.77px;
-    height: 60px;
+    width: 150px;
+    height: 50px;
     background-color: #ffffff;
     border-radius: 100px;
     overflow: hidden;
@@ -192,16 +192,16 @@ body {
     background-color: grey;
     border-radius: 100px;
     position: absolute;
-    top: 24px;
+    top: 20px;
     left: 77%;
     transform: translateX(-50%);
 }
 
 .vertical-line {
     position: relative;
-    top: -5px;
+    top: 9px;
     left: 77%;
-    height: 29px;
+    height: 25px;
     width: 0.3px;
     background-color: grey;
     transform: translateX(-50%);
@@ -209,9 +209,9 @@ body {
 
 .horizontal-line {
     position: absolute;
-    top: -5px;
-    left: 102.5%;
-    width: 88px;
+    top: 8px;
+    left: 101%;
+    width: 72px;
     height: 0.5px;
     background-color: grey;
     transform: translateX(-50%);
@@ -219,7 +219,7 @@ body {
 
 .rectangle-border {
     position: absolute;
-    top: -20px;
+    top: -9px;
     left: 148%;
     width: 70px;
     height: 34px;
@@ -232,7 +232,7 @@ body {
     bottom: 10px;
     overflow: hidden;
     position: absolute;
-    right: 17px;
+    right: 20px;
     display: flex;
 
 }

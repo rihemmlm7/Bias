@@ -1,8 +1,8 @@
 <!-- resources/views/components/tank.blade.php -->
 <link href="{{ asset('css/card-style.css') }}" rel="stylesheet">
-<div class="card relative">
+<div class="card relative ">
     <div class="header">
-        <div class="header-content flex justify-between items-center w-full space-x-14">
+        <div class="header-content flex justify-between items-center w-full space-x-11">
             <div class="left flex space-x-2">
                 <h1 class="card-title">{{ $type }}</h1>
                 <p class="volume">{{ $volume }}L</p>
@@ -17,7 +17,7 @@
         @if ($percentage < 50 && !empty($alert_message))
         <div class="alert flex items-center">
             <i class="fa fa-exclamation-triangle text-red" aria-hidden="true"></i>
-            <p class="textalert font-thin text-red ml-1">{{ $alert_message}}</p>
+            <p class="textalert font-thin text-red ml-1 ">{{ $alert_message}}</p>
         </div>
         @else
         <div class="alert2 flex items-center">

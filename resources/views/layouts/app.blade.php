@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +16,12 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
+<style>
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    .bg-blue1::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
 <body class="bg-gray-100">
   <div class="min-h-screen flex flex-col lg:flex-row  overflow-hidden">
     <!-- sidebar -->
@@ -60,7 +69,9 @@
 ])
         </div>
         <div class="p-0 rounded">
+          
           @include('components.tank', [
+            
   'type' => 'Ess',
   'volume' => '40000',
   'dimensions' => '1467',
@@ -73,17 +84,16 @@
         </div>
       </div>
       <!-- Fin cuve card -->
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-3 mb-3 mt-4">
-        <div class="lg:col-span-2">
-          <div class="bg-white shadow p-4 rounded-xl mb-4">Chart</div>
+      <div class="grid grid-cols-1 lg:grid-cols-9   gap-3  m-2 ">
+      <div class="col-start-1	 col-end-6	 ">
+        <div class="bg-white shadow p-4 rounded-xl mb-4">@include('components.chart')</div>
 
 
-          <!-- Table -->
-          <div class=" bg-white shadow p-2  mb-4 rounded-xl overflow-x-auto">
-            
-  <table class="min-w-full divide-y divide-gray-200">
+        <!-- Table -->
+        <div class="bg-blue1 shadow p-2 mb-4 rounded-xl overflow-y-auto max-h-40">
+        <table class="min-w-full divide-y divide-gray-200">
 
-<tbody class="bg-white divide-y divide-gray-200 text-sm">
+<tbody class="bg-blue1 divide-y divide-gray-200 text-sm">
             @include('components.table', [
   'date' => '25.05.2024',
   'volume' => '2500',
@@ -105,37 +115,53 @@
   'hour' => '07:00',
   'status' => '40'
 ])
-      
-      <!-- Repeat the above row structure for each dynamic row -->
-      </tbody>
-  </table>
-
-          </div>
-           <!-- Fin Table -->
-        </div>
-         <!-- Facture -->
-        <div class="bg-white shadow p-4 rounded-xl lg:col-span-2 mb-4">
-          @include('components.facture', [
+@include('components.table', [
   'date' => '25.05.2024',
   'volume' => '2500',
+  'dimensions' => '1080',
   'hour' => '07:00',
-  'nv_litre' => '15000',
-  'min'=> '15000',
-  'max'=> '15000',
-  'comnce_par'=> '15000',
-  'terminer'=> '15000',
-  'difirance'=> '15000',
-  'achat'=> '15000',
-  'vente'=> '15000',
-  'percentage' => 10,
-  'water_color' => '#E6AC10, #FFECB9',
+  'status' => '40'
 ])
-
-        </div>
-        <!-- Fin Facture -->
+@include('components.table', [
+  'date' => '25.05.2024',
+  'volume' => '2500',
+  'dimensions' => '1080',
+  'hour' => '07:00',
+  'status' => '40'
+])
+</tbody>
+</table>
+          </div>
+        <!-- Fin Table -->
       </div>
-    </main>
-  </div>
+      <!-- Facture -->
+      <div class="bg-white shadow rounded-xl col-start-6	 col-end-10 ">
+        @include('components.facture', [
+        'date' => '25.05.2024',
+        'volume' => '2500',
+        'hour' => '07:00',
+        'nv_litre' => '15000',
+        'min'=> '15000',
+        'max'=> '15000',
+        'comnce_par'=> '15000',
+        'terminer'=> '15000',
+        'difirance'=> '15000',
+        'achat'=> '15000',
+        'vente'=> '15000',
+        'percentage' => 10,
+        'water_color' => '#E6AC10, #FFECB9',
+        ])
+      </div>
+      <!-- Fin Facture -->
+    </div>
+  </main>
+</div>
+
+
+
+
+
+<script src="{{ asset('js/app.js') }}"></script>
 
 </body>
 

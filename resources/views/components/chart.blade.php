@@ -1,3 +1,4 @@
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 <link href="{{ asset('js/chart.js') }}" rel="stylesheet">
 <div class="max-w-sm w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
   <div class="flex justify-between mb-5">
