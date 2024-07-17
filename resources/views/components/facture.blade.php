@@ -68,9 +68,9 @@
     <p class="mr-2 text-xs font-medium text-dark">Vente:</p>
     <p class="mr-2 text-xs font-medium text-dark">{{ $vente }}L</p>
   </div>
-  <div class="shrink-0 mt-0 h-2.5 bg-gray-600 bg-opacity-80 rounded-[40px] w-[37px]" role="separator"
+  <div class="shrink-0 mt-0 h-2 bg-gray-600 bg-opacity-80 rounded-[40px] w-[34px]" role="separator"
     aria-hidden="true"></div>
-  <div class="tank mb-4">
+  <div class="tank  ">
     <div class="water"
       style="--water-height: {{ $percentage / 100 }}; background: linear-gradient(to top, {{ $water_color }});"></div>
     <div class="percentage-container">
