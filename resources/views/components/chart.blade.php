@@ -1,8 +1,9 @@
 
 <style>
   #myChart {
-    width: 100px; /* Adjust width here */
-    height: 100px; /* Adjust height here */
+    width: 100%; /* Adjust width here */
+    height: 100%; /* Adjust height here */
+   
   }
 
   canvas {
@@ -15,7 +16,7 @@
   <button id="btn-1m" class="pr-1 pl-1  rounded h-5 text-xs">1 Month</button>
   <button id="btn-1y" class="pr-1 pl-1  rounded h-5 text-xs">1 Year</button>
 </div>
-<canvas id="myChart" width="800" height="250"></canvas>
+<canvas id="myChart" ></canvas>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>

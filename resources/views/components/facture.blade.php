@@ -1,4 +1,4 @@
-<section class="flex flex-col items-center justify-center pt-2 pr-2 pl-2">
+<section class="flex flex-col items-center justify-center h-full pt-2 pr-2 pl-2">
   <header>
     <h2 class="text-xs font-extrabold text-gray-900 mb-2">Diesel</h2>
   </header>
