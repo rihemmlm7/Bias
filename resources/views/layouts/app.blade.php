@@ -13,47 +13,46 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <style>
-    body {
-     
-    }
+    body {}
 
     .fixed-header {
-      height: 160px;
+      height: 145px;
       overflow-x: auto;
+      overflow-y: hidden;
     }
 
     .main-content {
       flex: 1;
       display: flex;
       flex-direction: column;
-      height: 100vh; /* Full viewport height */
+      height: 100vh;
     }
 
     .content-grid {
       flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 8px; /* Increase the gap between grid items */
-      overflow-y: auto;
+      gap: 8px;
+      overflow-y: hidden;
     }
 
     @media (min-width: 768px) {
       .content-grid {
         display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-        gap: 8px; /* Increase the gap between grid items for larger screens */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 8px;
       }
     }
 
-    .content-grid > div {
+    .content-grid>div {
       overflow: hidden;
     }
   </style>
 </head>
 
 <body class="bg-gray-100">
-  <div class="min-h-screen flex flex-col lg:flex-row ">
+  <div class="min-h-screen flex flex-col lg:flex-row overflow-hidden">
     <!-- Sidebar -->
     <aside class="bg-bleu text-white w-full lg:w-1/6 p-4">
       <h1 class="text-2xl font-bold">DZBias</h1>
@@ -84,7 +83,7 @@
           'date' => Carbon::parse('2024-05-23')->format('d-m-Y '),
           'hour' => Carbon::parse('19:30')->format('H:i'),
           'alert_message' => 'Alerte rupture de stock',
-          'water_color' => '#FF0000, #FF8080', // gradient from red to light red
+          'water_color' => '#FF0000, #FF8080',
           ])
 
           @include('components.tank', [
@@ -112,15 +111,15 @@
       </header>
       <!-- End Header -->
 
-      <div class="content-grid m-2  ">
-        <div class="col-span-6 row-span-7 row-start-1 col-start-1 col-end-6 ">
-          <div class="bg-white shadow pb-8 p-4 rounded-xl h-full w-full ">
+      <div class="content-grid m-2">
+        <div class="col-span-1 row-span-1 row-start-1 col-start-1 ">
+          <div class="bg-white shadow pb-8 p-4 rounded-xl h-full w-full">
             @include('components.chart')
           </div>
         </div>
 
-        <div class="col-span-6 row-span-5 col-start-1 row-start-8  col-end-6">
-          <div class="bg-blue1 shadow p-2 rounded-xl overflow-auto h-full ">
+        <div class="col-span-1 row-span-1 col-start-1 row-start-2 ">
+          <div class="bg-blue1 shadow p-2 rounded-xl overflow-auto h-full">
             <table class="min-w-full divide-y overflow-auto divide-gray-200">
               <tbody class="bg-blue1 divide-y divide-gray-200 text-sm">
                 @include('components.table', [
@@ -163,7 +162,7 @@
           </div>
         </div>
 
-        <div class="col-span-4 row-span-12 col-start-6 row-start-1 col-end-10 ">
+        <div class="col-span-1 row-span-1 col-start-2 row-start-1 row-end-3">
           <div class="bg-white shadow rounded-xl p-4 mb-4 h-full">
             @include('components.facture', [
               'date' => '25.05.2024',
