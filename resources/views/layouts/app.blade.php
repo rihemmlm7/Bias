@@ -14,11 +14,11 @@
 
   <style>
     body {
-      overflow-y: hidden; /* Prevent vertical scrolling */
+     
     }
 
     .fixed-header {
-      height: 145px;
+      height: 160px;
       overflow-x: auto;
     }
 
@@ -34,7 +34,7 @@
       display: flex;
       flex-direction: column;
       gap: 8px; /* Increase the gap between grid items */
-      overflow-y: hidden;
+      overflow-y: auto;
     }
 
     @media (min-width: 768px) {
@@ -53,9 +53,9 @@
 </head>
 
 <body class="bg-gray-100">
-  <div class="min-h-screen flex flex-col lg:flex-row overflow-hidden">
+  <div class="min-h-screen flex flex-col lg:flex-row ">
     <!-- Sidebar -->
-    <aside class="bg-blue-700 text-white w-full lg:w-1/6 p-4">
+    <aside class="bg-bleu text-white w-full lg:w-1/6 p-4">
       <h1 class="text-2xl font-bold">DZBias</h1>
       <nav class="mt-6">
         <ul>
@@ -112,14 +112,14 @@
       </header>
       <!-- End Header -->
 
-      <div class="content-grid m-2 ">
-        <div class="col-span-6 row-span-7 row-start-1 col-start-1 col-end-7 ">
+      <div class="content-grid m-2  ">
+        <div class="col-span-6 row-span-7 row-start-1 col-start-1 col-end-6 ">
           <div class="bg-white shadow pb-8 p-4 rounded-xl h-full w-full ">
             @include('components.chart')
           </div>
         </div>
 
-        <div class="col-span-6 row-span-5 col-start-1 row-start-8  col-end-7">
+        <div class="col-span-6 row-span-5 col-start-1 row-start-8  col-end-6">
           <div class="bg-blue1 shadow p-2 rounded-xl overflow-auto h-full ">
             <table class="min-w-full divide-y overflow-auto divide-gray-200">
               <tbody class="bg-blue1 divide-y divide-gray-200 text-sm">
@@ -163,7 +163,7 @@
           </div>
         </div>
 
-        <div class="col-span-4 row-span-12 col-start-7 row-start-1 ">
+        <div class="col-span-4 row-span-12 col-start-6 row-start-1 col-end-10 ">
           <div class="bg-white shadow rounded-xl p-4 mb-4 h-full">
             @include('components.facture', [
               'date' => '25.05.2024',
