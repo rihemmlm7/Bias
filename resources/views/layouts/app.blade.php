@@ -48,6 +48,12 @@
     .content-grid>div {
       overflow: hidden;
     }
+
+
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    .bg-blue1::-webkit-scrollbar {
+      display: none;
+    }
   </style>
 </head>
 
@@ -112,10 +118,8 @@
       <!-- End Header -->
 
       <div class="content-grid m-2">
-        <div class="col-span-1 row-span-1 row-start-1 col-start-1 ">
-          <div class="bg-white shadow pb-8 p-4 rounded-xl h-full w-full">
-            @include('components.chart')
-          </div>
+        <div class="col-span-1 row-span-1 row-start-1 col-start-1 bg-white shadow rounded-xl chart-container">
+        @include('components.chart')
         </div>
 
         <div class="col-span-1 row-span-1 col-start-1 row-start-2 ">
@@ -123,39 +127,39 @@
             <table class="min-w-full divide-y overflow-auto divide-gray-200">
               <tbody class="bg-blue1 divide-y divide-gray-200 text-sm">
                 @include('components.table', [
-                  'date' => '25.05.2024',
-                  'volume' => '2500',
-                  'dimensions' => '1080',
-                  'hour' => '07:00',
-                  'status' => '40'
+                'date' => '25.05.2024',
+                'volume' => '2500',
+                'dimensions' => '1080',
+                'hour' => '07:00',
+                'status' => '40'
                 ])
                 @include('components.table', [
-                  'date' => '25.05.2024',
-                  'volume' => '2500',
-                  'dimensions' => '1080',
-                  'hour' => '07:00',
-                  'status' => '40'
+                'date' => '25.05.2024',
+                'volume' => '2500',
+                'dimensions' => '1080',
+                'hour' => '07:00',
+                'status' => '40'
                 ])
                 @include('components.table', [
-                  'date' => '25.05.2024',
-                  'volume' => '2500',
-                  'dimensions' => '1080',
-                  'hour' => '07:00',
-                  'status' => '40'
+                'date' => '25.05.2024',
+                'volume' => '2500',
+                'dimensions' => '1080',
+                'hour' => '07:00',
+                'status' => '40'
                 ])
                 @include('components.table', [
-                  'date' => '25.05.2024',
-                  'volume' => '2500',
-                  'dimensions' => '1080',
-                  'hour' => '07:00',
-                  'status' => '40'
+                'date' => '25.05.2024',
+                'volume' => '2500',
+                'dimensions' => '1080',
+                'hour' => '07:00',
+                'status' => '40'
                 ])
                 @include('components.table', [
-                  'date' => '25.05.2024',
-                  'volume' => '2500',
-                  'dimensions' => '1080',
-                  'hour' => '07:00',
-                  'status' => '40'
+                'date' => '25.05.2024',
+                'volume' => '2500',
+                'dimensions' => '1080',
+                'hour' => '07:00',
+                'status' => '40'
                 ])
               </tbody>
             </table>
@@ -165,19 +169,19 @@
         <div class="col-span-1 row-span-1 col-start-2 row-start-1 row-end-3">
           <div class="bg-white shadow rounded-xl p-4 mb-4 h-full">
             @include('components.facture', [
-              'date' => '25.05.2024',
-              'volume' => '2500',
-              'hour' => '07:00',
-              'nv_litre' => '15000',
-              'min' => '15000',
-              'max' => '15000',
-              'comnce_par' => '15000',
-              'terminer' => '15000',
-              'difirance' => '15000',
-              'achat' => '15000',
-              'vente' => '15000',
-              'percentage' => 10,
-              'water_color' => '#E6AC10, #FFECB9',
+            'date' => '25.05.2024',
+            'volume' => '2500',
+            'hour' => '07:00',
+            'nv_litre' => '15000',
+            'min' => '15000',
+            'max' => '15000',
+            'comnce_par' => '15000',
+            'terminer' => '15000',
+            'difirance' => '15000',
+            'achat' => '15000',
+            'vente' => '15000',
+            'percentage' => 10,
+            'water_color' => '#E6AC10, #FFECB9',
             ])
           </div>
         </div>
@@ -186,14 +190,7 @@
     <!-- End Main Content -->
   </div>
 
-  <script src="{{ asset('js/app.js') }}"></script>
-</body>
 
-<style>
-  /* Hide scrollbar for Chrome, Safari, and Opera */
-  .bg-blue1::-webkit-scrollbar {
-    display: none;
-  }
-</style>
+</body>
 
 </html>
